@@ -25,7 +25,7 @@ function updateCoffees(e) {
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
-        } else if (selectedRoast === "all"){
+        } else if (selectedRoast === "all"){ //else if made it so that all gets all the coffees
             filteredCoffees = coffees;
         }
     });
