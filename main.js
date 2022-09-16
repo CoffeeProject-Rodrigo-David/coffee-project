@@ -9,7 +9,7 @@ function renderCoffee(coffee) {
 
     return html;
 }
-//We changed the for loop to go on acending order
+//We changed the for loop to go on ascending order
 function renderCoffees(coffees) {
     let html = '';
     for(let i = 0; i < coffees.length; i++) {
@@ -25,6 +25,8 @@ function updateCoffees(e) {
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
+        } else if (selectedRoast === "all"){
+            filteredCoffees = coffees;
         }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
