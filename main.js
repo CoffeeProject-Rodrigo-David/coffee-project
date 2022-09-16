@@ -1,5 +1,5 @@
 "use strict"
-
+// We change tr th to div,P, and h2
 function renderCoffee(coffee) {
     let html = '<div class="coffee">';
     html += '<p>' + coffee.id + '</p>';
@@ -9,10 +9,10 @@ function renderCoffee(coffee) {
 
     return html;
 }
-
+//We changed the for loop to go on acending order
 function renderCoffees(coffees) {
     let html = '';
-    for(let i = coffees.length - 1; i >= 0; i--) {
+    for(let i = 0; i < coffees.length; i++) {
         html += renderCoffee(coffees[i]);
     }
     return html;
