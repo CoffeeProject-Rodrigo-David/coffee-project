@@ -59,3 +59,19 @@ tbody.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
 
 
+
+
+
+// // Get input element
+// let filterInput = document.getElementById('filterInput');
+// // Add event listener
+// filterInput.addEventListener('keyup',filterNames);
+//
+// function filterNames() {
+//     // get value of input
+//     let filterValue = document.getElementById('filterInput').value.toUpperCase();
+//     console.log(filterValue);
+// }
+
+
+
