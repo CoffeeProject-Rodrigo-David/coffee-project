@@ -11,61 +11,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Coffee!</h1>
-<div>
-    <form>
-        <label for="roast-selection">Roast</label><br>
-        <select id="roast-selection">
-            <option>all</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <br>
-<!--        Created input text for Coffee Name-->
-        <label for="filterInput">Coffee Name</label><br>
-        <input type="text" id="filterInput" placeholder="Search for coffee">
-        <br>
-        <input id="submit" type="submit" />
-<!--        -->
-    </form>
+<div class="thebigdiv row">
+                <div class="output col-6">
+                    <table>
+                <!--        <thead>-->
+                <!--            <div>-->
+                <!--                <p>ID</p>-->
+                <!--                <p>NAME</p>-->
+                <!--                <p>ROAST</p>-->
+                <!--            </div>-->
+                <!--        </thead>-->
+                        <tbody id="coffees"></tbody>
+                    </table>
+                </div>
+    <div class="coffeeInputs col-6">
+        <h1>Coffee!</h1>
+        <form>
+            <label for="roast-selection">Roast</label><br>
+            <select id="roast-selection">
+                <option class="all" onChange="updateCoffees('all')">all</option>
+                <option class="light" onChange="updateCoffees('light')">light</option>
+                <option class="medium" onChange="updateCoffees('medium')">medium</option>
+                <option class="dark" onChange="updateCoffees('dark')">dark</option>
+            </select>
+            <br>
+            <!--        Created input text for Coffee Name-->
+            <label for="filterInput">Coffee Name</label><br>
+            <input type="text" id="filterInput" placeholder="Search for coffee">
+            <br>
+            <input id="submit" type="submit" />
+            <!--        -->
+        </form>
 
 
 
-<!--    add a coffee section-->
-    <h1>Add a Coffee</h1>
-    <form>
-        <label for="roast-selection2">Roast</label><br>
-        <select id="roast-selection2">
-            <option onclick="filterSelection('all')">all</option>
-            <option onclick="filterSelection('light')">light</option>
-            <option onclick="filterSelection('medium')">medium</option>
-            <option onclick="filterSelection('dark')">dark</option>
-        </select>
-        <br>
-        <!--        Created input text for Coffee Name-->
-        <label for="userInput">Coffee Name</label><br>
-        <input type="text" id="userInput" placeholder="Search for coffee">
-        <br>
-        <input id="submit2" type="submit" />
-        <!--        -->
-    </form>
+        <!--    add a coffee section-->
+        <h1>Add a Coffee</h1>
+        <form>
+            <label for="roast-selection2">Roast</label><br>
+            <select id="roast-selection2">
+                <option>all</option>
+                <option>light</option>
+                <option>medium</option>
+                <option>dark</option>
+            </select>
+            <br>
+            <!--        Created input text for Coffee Name-->
+            <label for="userInput">Coffee Name</label><br>
+            <input type="text" id="userInput" placeholder="Search for coffee">
+            <br>
+            <input id="submit2" type="submit" />
+            <!--        -->
+        </form>
+    </div>
 </div>
-
-
-    <table>
-<!--        <thead>-->
-<!--            <div>-->
-<!--                <p>ID</p>-->
-<!--                <p>NAME</p>-->
-<!--                <p>ROAST</p>-->
-<!--            </div>-->
-<!--        </thead>-->
-        <tbody id="coffees"></tbody>
-    </table>
-
-
-
 
 
 <!--    js bootstrap-->

@@ -33,6 +33,7 @@ function updateCoffees(e) {
 }
 
 
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
@@ -50,8 +51,6 @@ let coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
-
-
 
 
 
@@ -79,12 +78,43 @@ filteredInput.addEventListener('keyup', searchCoffees)
 //^^^
 
 
+
+// push a object to the array
 let userInput = document.querySelector('#userInput');
 let roast = document.querySelector('#roast-selection2')
 
-function  newCoffee(id,name, roast){
+function  newCoffee(name, roast){
+    return {
+        name: name,
+        roast: roast
+
+    }
+
+}
+
+function pushCoffe(name, roast) {
 
 }
 
 
-
+// function createBook(title,firstName,lastName) {
+//     return {
+//         title: title,
+//         author: {
+//             firstName: firstName,
+//             lastName: lastName
+//         }
+//     }}
+// you can add the book to the list by
+// books.push(createBook("The Great Gatsby", "F.Scott", "Fitzgerald"));
+//
+//
+//
+// function Book(title, firstName, lastName) {
+//     console.log("Book # " + (index +1 ));
+//     console.log("Title: " + book.title);
+//     console.log(`Author: ${book.author.firstName} ${book.author.lastName}`);
+//     console.log("----");
+// }
+//
+// books.push(new Book("1984", "George", "Orwell"));
