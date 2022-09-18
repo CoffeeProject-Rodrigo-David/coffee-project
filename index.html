@@ -30,14 +30,17 @@
 <!--        -->
     </form>
 
+
+
+<!--    add a coffee section-->
     <h1>Add a Coffee</h1>
     <form>
         <label for="roast-selection2">Roast</label><br>
         <select id="roast-selection2">
-            <option>all</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
+            <option onclick="filterSelection('all')">all</option>
+            <option onclick="filterSelection('light')">light</option>
+            <option onclick="filterSelection('medium')">medium</option>
+            <option onclick="filterSelection('dark')">dark</option>
         </select>
         <br>
         <!--        Created input text for Coffee Name-->
@@ -47,8 +50,9 @@
         <input id="submit2" type="submit" />
         <!--        -->
     </form>
-
 </div>
+
+
     <table>
 <!--        <thead>-->
 <!--            <div>-->
@@ -65,7 +69,7 @@
 
 
 <!--    js bootstrap-->
-<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
     <script src="main.js"></script>
 </body>

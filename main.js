@@ -32,6 +32,7 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
+
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
@@ -62,7 +63,7 @@ tbody.innerHTML = renderCoffees(coffees);
 submitButton.addEventListener('click', updateCoffees);
 
 
-
+// filters coffee Name in search bar
 let filteredInput = document.querySelector('#filterInput');//added to filter on input
 function searchCoffees(){
     let searchCoffeeType = filteredInput.value.toUpperCase();
@@ -74,13 +75,13 @@ function searchCoffees(){
     })
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
-
 filteredInput.addEventListener('keyup', searchCoffees)
+//^^^
 
 
 let userInput = document.querySelector('#userInput');
 let roast = document.querySelector('#roast-selection2')
-let id =
+
 function  newCoffee(id,name, roast){
 
 }
