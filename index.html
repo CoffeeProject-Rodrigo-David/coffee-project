@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Coffee!</h1>
-
+<div>
     <form>
         <label for="roast-selection">Roast</label><br>
         <select id="roast-selection">
@@ -21,53 +21,46 @@
             <option>medium</option>
             <option>dark</option>
         </select>
-        <input id="submit" type="submit" /> <br>
-
-
+        <br>
 <!--        Created input text for Coffee Name-->
-        <label for="filter-Input">Coffee Name</label><br>
-        <input type="text" id="filter-Input"  placeholder="Search for coffee">
-        <div class="output"></div>
-        <br><button>Submit</button>
+        <label for="filterInput">Coffee Name</label><br>
+        <input type="text" id="filterInput" placeholder="Search for coffee">
+        <br>
+        <input id="submit" type="submit" />
 <!--        -->
     </form>
 
     <h1>Add a Coffee</h1>
+    <form>
+        <label for="roast-selection2">Roast</label><br>
+        <select id="roast-selection2">
+            <option>all</option>
+            <option>light</option>
+            <option>medium</option>
+            <option>dark</option>
+        </select>
+        <br>
+        <!--        Created input text for Coffee Name-->
+        <label for="userInput">Coffee Name</label><br>
+        <input type="text" id="userInput" placeholder="Search for coffee">
+        <br>
+        <input id="submit2" type="submit" />
+        <!--        -->
+    </form>
 
-
+</div>
     <table>
-        <thead>
-            <div>
-                <p>ID</p>
-                <p>NAME</p>
-                <p>ROAST</p>
-            </div>
-        </thead>
+<!--        <thead>-->
+<!--            <div>-->
+<!--                <p>ID</p>-->
+<!--                <p>NAME</p>-->
+<!--                <p>ROAST</p>-->
+<!--            </div>-->
+<!--        </thead>-->
         <tbody id="coffees"></tbody>
     </table>
 
 
-
-
-
-
-
-
-
-
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-
-    <ul id="myUL">
-        <li><a href="#">Adele</a></li>
-        <li><a href="#">Agnes</a></li>
-
-        <li><a href="#">Billy</a></li>
-        <li><a href="#">Bob</a></li>
-
-        <li><a href="#">Calvin</a></li>
-        <li><a href="#">Christina</a></li>
-        <li><a href="#">Cindy</a></li>
-    </ul>
 
 
 

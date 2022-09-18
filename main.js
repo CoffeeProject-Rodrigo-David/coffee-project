@@ -50,6 +50,10 @@ let coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
+
+
+
+
 let tbody = document.querySelector('#coffees');
 let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
@@ -59,29 +63,27 @@ submitButton.addEventListener('click', updateCoffees);
 
 
 
-
-
-
-function myFunction() {
-    // Declare variables
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
-
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
+let filteredInput = document.querySelector('#filterInput');//added to filter on input
+function searchCoffees(){
+    let searchCoffeeType = filteredInput.value.toUpperCase();
+    let filteredCoffees = [];
+    coffees.forEach(function (coffee){
+        if(coffee.name.toUpperCase().includes(searchCoffeeType)) {
+            filteredCoffees.push(coffee);
         }
-    }
+    })
+    tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
+filteredInput.addEventListener('keyup', searchCoffees)
+
+
+let userInput = document.querySelector('#userInput');
+let roast = document.querySelector('#roast-selection2')
+let id =
+function  newCoffee(id,name, roast){
+
+}
 
 
 
