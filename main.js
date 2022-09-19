@@ -75,25 +75,13 @@ function searchCoffees(){
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 filteredInput.addEventListener('keyup', searchCoffees)
-//^^^
+
+// search coffees from dropdown
+let dropInput = document.querySelector('#dropInput');
+dropInput.addEventListener('keyup', searchCoffees)
 
 
-
-// push a object to the array
-
-// function addCoffee(e) {
-//     e.preventDefault();
-//     let newCoffee = {
-//         id : coffees.length + 1,
-//         name: usersCoffee,
-//         roast: roastAdd
-//     }
-//     coffees.push(newCoffee)
-// }
-//
-// let usersCoffee = document.querySelector('#userInput').value;
-// let roastAdd = document.querySelector('#roast-selection2').value;
-
+// push an object to the array
 
 function addCoffee(e) {
     e.preventDefault();
