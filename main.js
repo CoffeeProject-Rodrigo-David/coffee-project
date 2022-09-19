@@ -80,41 +80,34 @@ filteredInput.addEventListener('keyup', searchCoffees)
 
 
 // push a object to the array
-let userInput = document.querySelector('#userInput');
-let roast = document.querySelector('#roast-selection2')
 
-function  newCoffee(name, roast){
-    return {
-        name: name,
-        roast: roast
-
-    }
-
-}
-
-function pushCoffe(name, roast) {
-
-}
-
-
-// function createBook(title,firstName,lastName) {
-//     return {
-//         title: title,
-//         author: {
-//             firstName: firstName,
-//             lastName: lastName
-//         }
-//     }}
-// you can add the book to the list by
-// books.push(createBook("The Great Gatsby", "F.Scott", "Fitzgerald"));
-//
-//
-//
-// function Book(title, firstName, lastName) {
-//     console.log("Book # " + (index +1 ));
-//     console.log("Title: " + book.title);
-//     console.log(`Author: ${book.author.firstName} ${book.author.lastName}`);
-//     console.log("----");
+// function addCoffee(e) {
+//     e.preventDefault();
+//     let newCoffee = {
+//         id : coffees.length + 1,
+//         name: usersCoffee,
+//         roast: roastAdd
+//     }
+//     coffees.push(newCoffee)
 // }
 //
-// books.push(new Book("1984", "George", "Orwell"));
+// let usersCoffee = document.querySelector('#userInput').value;
+// let roastAdd = document.querySelector('#roast-selection2').value;
+
+
+function addCoffee(e) {
+    e.preventDefault();
+    let newCoffee = {
+        id : coffees.length + 1,
+        name : coffeeName.value,
+        roast : roastAdd.value
+    }
+    coffees.push(newCoffee)
+}
+
+let coffeeName = document.querySelector('#userInput');
+let roastAdd = document.querySelector('#roast-selection2');
+let submitButton2 = document.querySelector('#submit2');
+submitButton2.addEventListener('click', addCoffee);
+
+
