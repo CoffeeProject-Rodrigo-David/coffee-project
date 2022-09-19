@@ -1,13 +1,10 @@
 body{
     margin-left: 1em;
     padding-top: 5px;
-    /*background-image: url("img/coffee-background.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
-    /*background-attachment: fixed;*/
-    /*background-size: cover;*/
+
 
 }
+
 
 #background-video {
     width: 100vw;
@@ -29,9 +26,11 @@ body{
     width: 175px;
     height: 175px;
 }
+
 .addCoffeeImg{
     width: 40%;
 }
+
 .lowerImg{
     margin-left: 7rem;
 }
@@ -84,5 +83,12 @@ td, th {
 }
 
 
+h2 {
+    font-family: 'Lemonada', cursive;
 
+}
 
+p {
+    font-family: 'Roboto', sans-serif;
+
+}
