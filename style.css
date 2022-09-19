@@ -10,11 +10,17 @@ body{
     height: 175px;
 }
 .addCoffeeImg{
-    height: 190px;
-    width: 350px;
-    padding: 0;
-    margin: 0;
+    width: 40%;
 }
+.lowerImg{
+    margin-left: 7rem;
+}
+
+.coffee-place {
+    width: 75%;
+    margin-top: 1rem;
+}
+
 #roast-selection{
     width: 75%;
 
