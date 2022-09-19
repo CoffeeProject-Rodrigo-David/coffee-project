@@ -2,6 +2,13 @@ body{
     margin-left: 1em;
     padding-top: 5px;
 }
+.navImg {
+    margin-top: 5px;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100px;
+    height: 100px;
+}
 #roast-selection{
     width: 75%;
 
