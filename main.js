@@ -2,7 +2,7 @@
 // We change tr th to div,P, and h2
 function renderCoffee(coffee) {
     let html = '<div class="coffee">';
-    html += '<p>' + coffee.id + '</p>';
+    // html += '<p>' + coffee.id + '</p>'; hide ids so they dont display
     html += '<h2>' + coffee.name + '</h2>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
