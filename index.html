@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<video id="background-video" autoplay loop muted>  <!-- background cover -->
+<video id="background-video" autoplay muted>  <!-- background cover -->
     <source src="img/CodeUp%20Coffee%20Shop-1.mp4" type="video/mp4">
 </video>
 <!--switch output with  coffee section so output display on left-->
@@ -59,15 +59,15 @@
         <form>
             <label for="roast-selection">Roast</label><br>
             <select id="roast-selection">
-                <option class="all" onChange="updateCoffees('all')">all</option>
-                <option class="light" onChange="updateCoffees('light')">light</option>
-                <option class="medium" onChange="updateCoffees('medium')">medium</option>
-                <option class="dark" onChange="updateCoffees('dark')">dark</option>
+                <option class="all">all</option>
+                <option class="light">light</option>
+                <option class="medium">medium</option>
+                <option class="dark">dark</option>
             </select>
             <br>
             <!--        Created input text for Coffee Name-->
             <label for="filterInput">Coffee Name</label><br>
-            <input type="text" id="filterInput" placeholder="Search for coffee">
+            <input type="text" autocomplete="off" id="filterInput" onfocus="this.value=''" value="Search for coffee">
             <br>
             <input id="submit" type="submit" />
             <!--        -->
@@ -89,12 +89,12 @@
             <br>
             <!--        Created input text for Coffee Name-->
             <label for="userInput">Coffee Name</label><br>
-            <input type="text" id="userInput" placeholder="Enter a new coffee">
+            <input type="text" autocomplete="off" id="userInput" onfocus="this.value=''" value="Enter a new coffee">
             <br>
             <input id="submit2" type="submit" />
             <!--        -->
         </form>
-        <div class="container-fluid">
+        <div class="container" id="ccs">
         <img src="img/CodeUp%20Coffee%20shop-1.png" class="lowerImg" alt="coffee cup drawing with computer code written in it">
         </div>
     </div>
